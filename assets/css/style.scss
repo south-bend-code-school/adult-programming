@@ -1,0 +1,173 @@
+---
+---
+
+@import "jekyll-theme-minimal";
+
+h1 {
+  font-size: 32px;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 20px;
+}
+h4 {
+  font-size: 16px;
+}
+h5 {
+  font-size: 14px;
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  background-color: #111;
+}
+
+$side-width: 400px;
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+header {
+  float: none;
+  width: $side-width;
+  max-width: 100vw;
+  height: 100vh;
+  padding: 3rem;
+  color: #DDD;
+  background-color: #111;
+  h3 {
+    color: #DDD;
+    margin-bottom: .5rem;
+  }
+  .module {
+    margin-bottom: 2rem
+  }
+  > ul {
+    max-height: calc(100vh - 300px);
+    overflow-y: scroll;
+    background-color: #222;
+    padding: 1rem;
+    margin-bottom: 0rem;
+    li {
+      margin-bottom: 0rem;
+      display: block;
+      &:last-child {
+        margin-bottom: 0rem;
+      }
+    }
+  }
+  ul {
+    padding-inline-start: 1rem;
+  }
+  a {
+    color: lighten(#267CB9, 5);
+    &:hover {
+      font-weight: unset;
+    }
+  }
+}
+
+ul {
+  //margin-bottom: 0rem
+}
+
+section {
+  width: calc(100% - #{$side-width});
+  float: none;
+  margin-left: $side-width;
+  padding: 4rem;
+  padding-bottom: 10rem;
+  background-color: white;
+  box-shadow: 0 0 5px 0 grey inset;
+  min-height: 100vh;
+  > * {
+    max-width: 800px;
+  }
+}
+
+img {
+  box-shadow: 0 0 5px 0 grey
+}
+
+footer {
+  padding: 0 2rem;
+  bottom: 1rem;
+}
+
+code {
+  background-color: #f8f8f8;
+  padding: .1rem .3rem;
+}
+
+.red {
+  color: red;
+}
+
+strong {
+  color: inherit;
+}
+
+.hint {
+  width: fit-content;
+  cursor: default;
+  padding-bottom: 2rem;
+  color: darkblue;
+  + .hint-content {
+    display: none;
+  }
+  &:hover {
+    font-weight: bolder;
+    + .hint-content {
+      display: block;
+    }
+  }
+}
+
+.hint-content {
+  transition: .25s;
+}
+
+.hint-content:hover {
+  display: block;
+}
+
+@media (max-width:960px) {
+  header {
+    position: relative;
+    height: 50vh;
+    overflow: scroll;
+    width: 100%;
+    padding: 2rem;
+    ul {
+      position: relative;
+      right: 0; 
+      top: 0;
+    }
+    > ul {
+      overflow: scroll;
+      max-height: 30vh;
+    }
+
+  }
+  section {
+    width: 100%;
+    margin-left: 0;
+    padding: 2rem;
+  }
+  footer {
+    p {
+      margin: 0;
+      padding-bottom: 1rem;
+    }
+  }
+}

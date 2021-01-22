@@ -6,4 +6,4 @@ see_module_1: true
 see_module_2: true
 see_module_3: true
 theme: jekyll-theme-minimal
-baseurl: /intro-to-web-dev
+baseurl: /adult-programming
