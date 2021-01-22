@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" 
+      type="image/png" 
+      href="https://img.icons8.com/wired/344/monitor.png">
+
+{% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    <style>
+      * {
+        /*font-family: 'Comic Sans MS';*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <!-- <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1> -->
+        <h1 style="color:white;">{{ site.title | default: site.github.repository_name }}</h1>
+        
+        {% if site.logo %}
+          <!-- <img src="{{site.logo | relative_url}}" alt="Logo" /> -->
+        {% endif %}
+
+        <p>{{ site.description | default: site.github.project_tagline }}</p>
+
+        <!-- {% if site.github.is_project_page %}
+        <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
+        {% endif %}
+
+        {% if site.github.is_user_page %}
+        <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
+        {% endif %} -->
+
+        <ul id="huhwut?">
+          <li class="module">
+            <h3>About this course</h3>
+            <ul>
+              <li><a href="{{ site.baseurl }}/lessons/module0/overview.html">Overview</a></li>
+              <li><a href="{{ site.baseurl }}/lessons/module0/schedule.html">Schedule</a></li>
+              <li><a href="{{ site.baseurl }}/lessons/module0/structure.html">Course Stucture</a></li>
+              <li><a href="{{ site.baseurl }}/lessons/module0/tools.html">Tools</a></li>
+              <li><a href="{{ site.baseurl }}/lessons/module0/communication.html">Communication</a></li>
+              <li><a href="{{ site.baseurl }}/lessons/module0/feedback.html">Feedback</a></li>
+              <li><a href="{{ site.baseurl }}/lessons/module0/instructors.html">Instructors</a></li>
+            </ul>
+          </li>
+          {% if site.see_module_1 %}
+          <li class="module">
+            <h3>Module 1</h3>
+            <ul>
+              <li><a href="{{ site.baseurl }}/lessons/module1/overview.html">Overview</a></li>
+              <li>
+                Prework Lesson 1
+                <ul>
+                  <li><a href="{{ site.baseurl }}/lessons/module1/how_the_web_works.html">How the web works</a></li>
+                  <li><a href="{{ site.baseurl }}/lessons/module1/intro_to_html_css.html">Intro to HTML and CSS</a></li>
+                  <li><a href="{{ site.baseurl }}/lessons/module1/vs_code.html">Visual Studio Code</a></li>
+                  <li><a href="{{ site.baseurl }}/lessons/module1/intro_to_chrome.html">Intro to Chrome</a></li>
+                  <li><a href="{{ site.baseurl }}/lessons/module1/friend-o-gram.html">Practice Problem: Friend-o-gram</a></li>
+                  <li><a href="{{ site.baseurl }}/lessons/module1/intro_to_git.html">Intro to Git and GitHub</a></li>
+                </ul>
+              </li>
+              <li>
+                Live Session 1
+                <ul>
+                  <li><a href="{{ site.baseurl }}/lessons/module1/live_session_1.html">Overview</a></li>
+                </ul>
+              </li>
+              <li>
+                Project 1
+                <ul>
+                  <li><a href="{{ site.baseurl }}/lessons/module1/project-part1.html">Virtual Pet: Part 1</a></li>
+                </ul>
+              </li>
+              <li>
+                Prework Lesson 2
+                <ul>
+                  <li><a href="{{ site.baseurl }}/lessons/module1/intro_to_js_vars_conditionals.html">Intro to JS: Variables and Conditionals</a></li>
+                  <li><a href="{{ site.baseurl }}/lessons/module1/intro_to_functions_math.html">Intro to JS Functions and Math</a></li>
+                  <li><a href="{{ site.baseurl }}/lessons/module1/pp-quidditch.html">Practice Problem: Quidditch Cup</a></li>
+                </ul>
+              </li>
+              <li>
+                Live Session 2
+                <ul>
+                  <li><a href="{{ site.baseurl }}/lessons/module1/live_session_2.html">Overview</a></li>
+                </ul>
+              </li>
+              <li>
+                Project 2
+                <ul>
+                  <li><a href="{{ site.baseurl }}/lessons/module1/project-part2.html">Virtual Pet: Part 2</a></li>
+                </ul>
+              </li>
+              <li>
+                Lab
+                <ul>
+                  <li><a href="{{ site.baseurl }}/lessons/module1/lab.html">Overview</a></li>
+                </ul>
+              </li>
+              <li><a href="{{ site.baseurl }}/lessons/module1/feedback.html">Give Us Your Feedback!</a></li>
+            </ul>
+          </li>
+          {% endif %}
+          {% if site.see_module_2 %}
+          <li class="module">
+            <h3>Module 2</h3>
+            <ul>
+              <li><a href="{{ site.baseurl }}/lessons/module2/overview.html">Overview</a></li>
+              <li>
+                Prework Lesson 1
+                <ul>
+                  <li><a href="{{ site.baseurl }}/lessons/module2/intro_to_js_arrays.html">Intro to JS: Arrays</a></li>
+                  <li><a href="{{ site.baseurl }}/lessons/module2/intro_to_js_objects.html">Intro to JS: Objects</a></li>
+                  <li><a href="{{ site.baseurl }}/lessons/module2/random_card.html">Practice Problem: Random Card Selector</a></li>
+                </ul>
+              </li>
+              <li>
+                Live Session 1
+                <ul>
+                  <li><a href="{{ site.baseurl }}/lessons/module2/live_session_1.html">Overview</a></li>
+                </ul>
+              </li>
+              <!-- No project part 1, just the project of black jack at the end.
+                <li>
+                Project 1
+                <ul>
+                  <li><a href="{{ site.baseurl }}/lessons/module2/project-part1.html">Snake: Part 1</a></li>
+                </ul>
+              </li>-->
+              <li>
+                Prework Lesson 2
+                <ul>
+                  <li><a href="{{ site.baseurl }}/lessons/module2/intro_to_js_loops.html">Intro to JS: Loops</a></li>
+                  <li><a href="{{ site.baseurl }}/lessons/module2/deck_of_cards.html">Practice Problem: Deck of Cards</a></li>
+                </ul>
+              </li>
+              <li>
+                Live Session 2
+                <ul>
+                  <li><a href="{{ site.baseurl }}/lessons/module2/live_session_2.html">Overview</a></li>
+                </ul>
+              </li>
+              <li>
+                Project
+                <ul>
+                  <li><a href="{{ site.baseurl }}/lessons/module2/blackjack.html">Black Jack</a></li>
+                </ul>
+              </li>
+              <li>
+                Lab
+                <ul>
+                  <li><a href="{{ site.baseurl }}/lessons/module2/lab.html">Overview</a></li>
+                </ul>
+              </li>
+              <li><a href="{{ site.baseurl }}/lessons/module2/feedback.html">Give Us Your Feedback!</a></li>
+            </ul>
+          </li>
+          {% endif %}
+      
+          {% if site.see_module_3 %}
+          <li class="module">
+            <h3>Module 3</h3>
+            <ul>
+              <li><a href="{{ site.baseurl }}/lessons/module3/overview.html">Overview</a></li>
+              <li>
+                Prework Lesson 1
+                <ul>
+                  <li><a href="{{ site.baseurl }}/lessons/module3/intro_to_databases.html">Intro to Databases</a></li>
+                  <li><a href="{{ site.baseurl }}/lessons/module3/setup_firestore.html">Setting up Google Firestore</a></li>
+                  <li><a href="{{ site.baseurl }}/lessons/module3/intro_to_firestore.html">Intro to Firestore</a></li>
+                  <li><a href="{{ site.baseurl }}/lessons/module3/hotdog.html">Practice Problem: Is a hotdog a sandwhich?</a></li>
+                </ul>
+              </li>
+              <li>
+                Live Session 1
+                <ul>
+                  <li><a href="{{ site.baseurl }}/lessons/module3/live_session_1.html">Overview</a></li>
+                </ul>
+              </li>
+              <li>
+                Project 1
+                <ul>
+                  <li><a href="{{ site.baseurl }}/lessons/module3/chat_app_simple.html">Project Part 1: Simple Chat</a></li>
+                </ul>
+              </li>
+              <li>
+                Prework Lesson 2
+                <ul>
+                  <li><a href="{{ site.baseurl }}/lessons/module3/intro_to_apis.html">Intro to APIs</a></li>
+                  <li><a href="{{ site.baseurl }}/lessons/module3/giphy.html">Practice Problem: Random Gif</a></li>
+                </ul>
+              </li>
+              <li>
+                Live Session 2
+                <ul>
+                  <li><a href="{{ site.baseurl }}/lessons/module3/live_session_2.html">Overview</a></li>
+                </ul>
+              </li>
+              <li>
+                Project 2
+                <ul>
+                  <li><a href="{{ site.baseurl }}/lessons/module3/chat_app_advanced.html">Project Part 2: Advanced Chat</a></li>
+                </ul>
+              </li>
+              <li>
+                Lab
+                <ul>
+                  <li><a href="{{ site.baseurl }}/lessons/module3/lab.html">Overview</a></li>
+                </ul>
+              </li>
+              <li><a href="{{ site.baseurl }}/lessons/module3/feedback.html">Give Us Your Feedback!</a></li>
+            </ul>
+          </li>
+          {% endif %}
+        </ul>
+      </header>
+      <section>
+
+      {{ content }}
+
+      </section>
+      <footer>
+        <p><small>Created by South Bend Code School &mdash; <a href="https://www.facebook.com/southbendcodeschool">Check us out.</a></small></p>
+      </footer>
+    </div>
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    {% if site.google_analytics %}
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', '{{ site.google_analytics }}', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    {% endif %}
+
+    <script>
+      var nav = document.getElementById("huhwut?")
+
+      window.onload = () => {
+        var cookie = document.cookie
+        if (!cookie) return
+
+        var scroll = Number(cookie.split("=")[1])
+        nav.scrollTop = scroll
+      }
+
+      nav.addEventListener("scroll", (e) => {
+        var scroll = e.target.scrollTop
+        
+        document.cookie = `navScroll=${scroll}`
+      })
+    </script>
+  </body>
+</html>
