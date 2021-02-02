@@ -13,6 +13,7 @@ layout: default
   - CSS
 - Any questions?
 - There is going to be a crazy amount of terms thrown at you and it all can be VERY confusing. Please ask questions whenever you want. If you have the question, someone else does too. Asking is the way of learning with code.
+- You will have to transition between watching my screen and coding. Never be afraid to ask me to slow down since I may accidentally speed ahead since I am not switching.
 
 ## What is coding? (7 min)
 
@@ -281,6 +282,7 @@ h1 {
 - Put a few divs inside of another div
   - make children divs blue squares and give them space
   - explain why it intially looks like 1 rectangle instead of 2 boxes
+  
 ```
 <div>
   <div class="box"></div>
@@ -351,7 +353,27 @@ h1 {
 - center items using `justify-items: center`
 - remove all imgs but one and show that you can use grid to easily center something
   - change background-color or `parent` to show how wide it is
-- any quetions
+- any questions
+- result:
+
+```
+<div id="parent">
+  <img src="https://static.toiimg.com/thumb/msid-67586673,width-800,height-600,resizemode-75,imgsize-3918697,pt-32,y_pad-40/67586673.jpg" />
+</div>
+
+img {
+  height: 200px;
+  background-color: blue;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+#parent {
+  display: grid;
+  justify-items: center;
+  background-color: tan;
+}
+```
 
 ## brings us up to 81 minutes
 
