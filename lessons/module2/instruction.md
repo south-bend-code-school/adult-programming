@@ -262,7 +262,7 @@ function createGreeting () {
 }
 ```
 
-## Parameters () (prev 60 min)
+## Parameters (19.5 min) (prev 60 min)
 
 (2 min)
 ### Intro
@@ -384,3 +384,5 @@ function addNumbers () {
   document.getElementById('total').innerText = total
 }
 ```
+
+- any questions?
