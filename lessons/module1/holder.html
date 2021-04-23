@@ -1,0 +1,56 @@
+<h1>This is a grid of cute cats</h1>
+
+<div id="container">
+    <img id="item-1" src="https://static.toiimg.com/thumb/msid-67586673,width-800,height-600,resizemode-75,imgsize-3918697,pt-32,y_pad-40/67586673.jpg" />
+    <img id="item-2" src="https://i.pinimg.com/originals/0c/27/2b/0c272bc26c77c72e88f2502248645b40.png" />
+    <img id="item-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_I2E6P3GtWG0lwZ-021-8tUvcGtkVJo6TPQ&usqp=CAU" />
+    <img id="item-4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMe00zeq8gM1R7li7y1vkf5vW7uvyvcDrClg&usqp=CAU" />
+  </div>
+
+  
+* {
+    outline: 1px solid red;
+    outline-offset: -1px;
+  }
+
+h1 {
+  margin-bottom: 5px;
+}
+
+img {
+  width: 100px;
+  height: 100px;    
+}
+
+#container {
+  display: grid;
+  justify-items:center;
+  align-items:center;
+  grid-gap: 0px;
+  grid-template-columns:  repeat(2, 120px);
+  grid-template-rows: repeat(2, 120px);
+}
+
+#item-1 {
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: center;
+}
+
+#item-2 {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: center;
+}
+
+#item-3 {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: center;
+}
+
+#item-4 {
+  grid-column: 2;
+  grid-row: 2;
+  justify-self: center;
+}
